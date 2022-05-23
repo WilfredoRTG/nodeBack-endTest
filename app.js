@@ -20,6 +20,7 @@ app.use('/query', queryRouter);
 app.use('/post', postRouter);
 app.use('/delete', deleteRouter);
 
+// Default route
 app.use('*', router404);
 // Start the server
 app.listen(app.get('port'), () => {
