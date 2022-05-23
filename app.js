@@ -20,7 +20,7 @@ app.use('/query', queryRouter);
 app.use('/post', postRouter);
 app.use('/delete', deleteRouter);
 
-// app.use('*', router404);
+app.use('*', router404);
 // Start the server
 app.listen(app.get('port'), () => {
     console.log(`Server running on port ${PORT}`);
