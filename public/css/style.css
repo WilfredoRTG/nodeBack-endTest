@@ -1,0 +1,24 @@
+:root {
+    --clr-home : #003cff;
+    --clr-h1 : #ffff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--clr-home);
+}
+
+.test h1{
+    color: var(--clr-h1);
+}
