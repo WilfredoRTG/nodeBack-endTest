@@ -1,6 +1,6 @@
-import { createConnection } from 'mysql2';
+import mysql2  from 'mysql2/promise';
 
-export const db = createConnection({
+export const db = await mysql2.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
