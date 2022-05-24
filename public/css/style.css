@@ -1,6 +1,12 @@
 :root {
-    --clr-home : #003cff;
-    --clr-h1 : #ffff;
+    --clr-all : #ffff;
+    --clr-hover : blue;
+    --clr-section-1 : #0FC2C0;
+    --clr-section-2 : #0CABA8;
+    --clr-section-3 : #008F8C;
+    --clr-section-4 : #015958;
+    --clr-section-5 : #023535;
+    --font-family: 'Plus Jakarta Sans'
 }
 
 *,
@@ -10,15 +16,71 @@
     margin: 0;
 }
 
-.test{
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--clr-all);
+}
+
+.item{
+    text-decoration: none;
+    background-color: red;
+    color: var(--clr-all);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.item:hover{
+    background-color: var(--clr-hover);
+    color: var(--clr-all);
+    padding: 15px;
+    transition: padding 0.25s linear;
+}
+
+.section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: var(--clr-home);
 }
 
-.test h1{
-    color: var(--clr-h1);
+.section:nth-child(2){
+    background-color: var(--clr-section-1);
+}
+
+.section:nth-child(3){
+    background-color: var(--clr-section-2);
+}
+
+.section:nth-child(4){
+    background-color: var(--clr-section-3);
+}
+
+.section:nth-child(5){
+    background-color: var(--clr-section-4);
+}
+
+.section:nth-child(6){
+    background-color: var(--clr-section-5);
+}
+
+.color{
+    color: var(--clr-all)
 }
