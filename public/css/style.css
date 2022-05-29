@@ -68,13 +68,6 @@ body{
     background-size: cover;
 }
 
-.parallax::after{
-    content: "";
-    position: absolute;
-    transform: translateZ(-1px) scale(1.5);
-    z-index: -1;
-}
-
 .section:nth-child(2){
     background-color: var(--clr-section-1);
 }
