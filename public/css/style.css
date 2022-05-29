@@ -61,6 +61,20 @@ body{
     height: 100vh;
 }
 
+.parallax{
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax::after{
+    content: "";
+    position: absolute;
+    transform: translateZ(-1px) scale(1.5);
+    z-index: -1;
+}
+
 .section:nth-child(2){
     background-color: var(--clr-section-1);
 }
